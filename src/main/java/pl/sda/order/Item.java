@@ -10,6 +10,7 @@ public class Item {
         this.name = name;
         /** Ilość sztuk  */
         this.quantity = quantity;
+        /** Cena pojedyńczej sztuki  */
         this.price = price;
     }
 
@@ -18,15 +19,11 @@ public class Item {
      * @return
      */
     double calculate(){
-        return 0;
+        return quantity * price;
     }
 
     @Override
     public String toString() {
-        return "Item{" +
-                "name='" + name + '\'' +
-                ", quantity=" + quantity +
-                ", price=" + price +
-                '}';
+        return name + " " + price + " zł "  + quantity + " szt.";
     }
 }

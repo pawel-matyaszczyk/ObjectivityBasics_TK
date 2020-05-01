@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Order {
     private List<Item> items;
-    /**Liczba zamówionych sztuk*/
+    /**Liczba pozycji w zamówieniu*/
     private int counter;
     /** Max liczba pozycji w zamówieniu  */
     private int maxSize;
@@ -28,5 +28,9 @@ public class Order {
      */
     double calculateValue() {
         return 0;
+    }
+
+    void delItem(int index){
+
     }
 }
