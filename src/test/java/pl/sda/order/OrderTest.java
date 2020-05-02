@@ -21,4 +21,15 @@ class OrderTest {
         //then
         assertEquals(15.5, result);
     }
+    @org.junit.jupiter.api.Test
+    @DisplayName("return 0 when list is empty")
+    void should_return_0() {
+        //given
+        Order o = new Order();
+        //when
+        double result = o.calculateValue();
+
+        //then
+        assertEquals(0,result);
+    }
 }
