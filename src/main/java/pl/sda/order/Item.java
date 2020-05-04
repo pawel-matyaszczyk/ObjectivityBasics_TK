@@ -24,6 +24,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return String.format("%-20s %10.2f zł %4o szt. %10.2f zł",name, price, quantity, calculate());
+        return String.format("%-20s %10.2f zł %4d szt. %10.2f zł",name, price, quantity, calculate());
     }
 }
